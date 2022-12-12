@@ -1,10 +1,5 @@
 <template>
-  <div
-    v-editable="blok"
-    :cat="$attrs.cat"
-    class="py-8 mb-6 text-5xl font-bold text-center"
-    data-test="teaser"
-  >
+  <div v-editable="blok" class="py-16 text-5xl font-bold text-center">
     {{ blok.headline }}
   </div>
 </template>

@@ -21,7 +21,7 @@ import { snakeCase } from 'file:///home/projects/nuxt-3-sdk-demo-97b1sp/node_mod
 import htmlTemplate from '/home/projects/nuxt-3-sdk-demo-97b1sp/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'file:///home/projects/nuxt-3-sdk-demo-97b1sp/node_modules/vue/server-renderer/index.mjs';
 
-const _runtimeConfig = {app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""},nitro:{routes:{},envPrefix:"NUXT_"},public:{storyblok:{accessToken:"ql3TsvjkKIshOuJ7gRfh3Att"}}};
+const _runtimeConfig = {app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""},nitro:{routes:{},envPrefix:"NUXT_"},public:{storyblok:{accessToken:"La5xEQkke7JEN0jQWvHRQwtt"}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {

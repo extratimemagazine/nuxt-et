@@ -1,8 +1,13 @@
 <template>
-  <div v-editable="blok" class="flex py-8 mb-6" data-test="grid">
-    <div v-for="blok in blok.columns" :key="blok._uid" class="flex-auto px-6">
-      <StoryblokComponent :blok="blok" />
-    </div>
+  <div
+    v-editable="blok"
+    class="container mx-auto grid grid-cols-3 gap-12 place-items-center py-16"
+  >
+    <StoryblokComponent
+      v-for="blok in blok.columns"
+      :key="blok._uid"
+      :blok="blok"
+    />
   </div>
 </template>
 

@@ -1680,11 +1680,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _directive_editable = __vite_ssr_import_0__.resolveDirective("editable")
 
   _push(`<div${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-      class: "py-2",
-      "data-test": "feature"
-    }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))
-  }><h1 class="text-lg">${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps(_attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))
+  }><h1 class="text-xl">${
     __vite_ssr_import_1__.ssrInterpolate($props.blok.name)
   }</h1></div>`)
 }
@@ -1803,14 +1800,12 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_StoryblokComponent = __vite_ssr_import_0__.resolveComponent("StoryblokComponent")
   const _directive_editable = __vite_ssr_import_0__.resolveDirective("editable")
 
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-    class: "flex py-8 mb-6",
-    "data-test": "grid"
-  }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))}><!--[-->`)
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "container mx-auto grid grid-cols-3 gap-12 place-items-center py-16" }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))}><!--[-->`)
   __vite_ssr_import_1__.ssrRenderList($props.blok.columns, (blok) => {
-    _push(`<div class="flex-auto px-6">`)
-    _push(__vite_ssr_import_1__.ssrRenderComponent(_component_StoryblokComponent, { blok: blok }, null, _parent))
-    _push(`</div>`)
+    _push(__vite_ssr_import_1__.ssrRenderComponent(_component_StoryblokComponent, {
+      key: blok._uid,
+      blok: blok
+    }, null, _parent))
   })
   _push(`<!--]--></div>`)
 }
@@ -1862,10 +1857,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_StoryblokComponent = __vite_ssr_import_0__.resolveComponent("StoryblokComponent")
   const _directive_editable = __vite_ssr_import_0__.resolveDirective("editable")
 
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-    class: "px-6",
-    "data-test": "page"
-  }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))}><!--[-->`)
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps(_attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))}><!--[-->`)
   __vite_ssr_import_1__.ssrRenderList($props.blok.body, (blok) => {
     _push(__vite_ssr_import_1__.ssrRenderComponent(_component_StoryblokComponent, {
       key: blok._uid,
@@ -1922,11 +1914,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _directive_editable = __vite_ssr_import_0__.resolveDirective("editable")
 
   _push(`<div${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-      cat: _ctx.$attrs.cat,
-      class: "py-8 mb-6 text-5xl font-bold text-center",
-      "data-test": "teaser"
-    }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "py-16 text-5xl font-bold text-center" }, _attrs, __vite_ssr_import_1__.ssrGetDirectiveProps(_ctx, _directive_editable, $props.blok)))
   }>${
     __vite_ssr_import_1__.ssrInterpolate($props.blok.headline)
   }</div>`)
